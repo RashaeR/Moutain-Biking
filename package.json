@@ -1,0 +1,14 @@
+{
+  "name": "mountain-biking",
+  "version": "1.0.0",
+  "description": "Mountain Biking Site",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Rashae Redden",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
