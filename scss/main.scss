@@ -1,0 +1,64 @@
+// Variables \\
+$Nav-color: #493829;
+$Nav-text-color: #a9a18c;
+$Nav-unline-color: #d57500;
+
+// All \\
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+// Nav \\
+nav {
+  background: $Nav-color;
+  padding: 5px;
+  display: flex;
+  padding-left: 5rem;
+  justify-content: left;
+  position: relative;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style: none;
+    padding: 8px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $Nav-text-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  #store-container {
+    margin-top: 5px;
+    #store-search {
+      margin-left: 34rem;
+      height: 14px;
+      width: 7rem;
+      padding: 5px;
+      font-size: 11px;
+      border-width: 0;
+    }
+  }
+
+  .nav-underline {
+    height: 2px;
+    background: $Nav-unline-color;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+}
+
+// Body \\
+body {
+  background: grey;
+}

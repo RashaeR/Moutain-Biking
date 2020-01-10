@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif; }
+
+nav {
+  background: #493829;
+  padding: 5px;
+  display: flex;
+  padding-left: 5rem;
+  justify-content: left;
+  position: relative; }
+  nav ul {
+    display: flex; }
+  nav li {
+    list-style: none;
+    padding: 8px;
+    text-align: center; }
+  nav a {
+    text-decoration: none;
+    color: #a9a18c;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  nav #store-container {
+    margin-top: 5px; }
+    nav #store-container #store-search {
+      margin-left: 34rem;
+      height: 14px;
+      width: 7rem;
+      padding: 5px;
+      font-size: 11px;
+      border-width: 0; }
+  nav .nav-underline {
+    height: 2px;
+    background: #d57500;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative; }
+
+body {
+  background: grey; }
