@@ -46,6 +46,9 @@ nav {
       padding: 5px;
       font-size: 11px;
       border-width: 0;
+      &:focus {
+        outline: none;
+      }
     }
   }
 
@@ -55,6 +58,9 @@ nav {
     margin-right: auto;
     margin-left: auto;
     position: relative;
+    top: 5px;
+    transition: top 0.25s, opacity 0.25s;
+    opacity: 0%;
   }
 }
 

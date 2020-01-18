@@ -31,12 +31,17 @@ nav {
       padding: 5px;
       font-size: 11px;
       border-width: 0; }
+      nav #store-container #store-search:focus {
+        outline: none; }
   nav .nav-underline {
     height: 2px;
     background: #d57500;
     margin-right: auto;
     margin-left: auto;
-    position: relative; }
+    position: relative;
+    top: 5px;
+    transition: top 0.25s, opacity 0.25s;
+    opacity: 0%; }
 
 body {
   background: grey; }
