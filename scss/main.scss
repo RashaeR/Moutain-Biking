@@ -36,19 +36,34 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
   }
-
   #store-container {
     margin-top: 5px;
     #store-search {
-      margin-left: 34rem;
+      margin-left: 33rem;
       height: 14px;
       width: 7rem;
       padding: 5px;
+      margin-right: 5px;
       font-size: 11px;
       border-width: 0;
       &:focus {
         outline: none;
       }
+    }
+
+    .fa-shopping-cart {
+      position: absolute;
+      font-size: 1em;
+      padding: 5px;
+      color: $Nav-text-color;
+      &:hover {
+        color: $Nav-unline-color;
+      }
+    }
+
+    .fa-user {
+      @extend .fa-shopping-cart;
+      margin-left: 32px;
     }
   }
 

@@ -25,14 +25,24 @@ nav {
   nav #store-container {
     margin-top: 5px; }
     nav #store-container #store-search {
-      margin-left: 34rem;
+      margin-left: 33rem;
       height: 14px;
       width: 7rem;
       padding: 5px;
+      margin-right: 5px;
       font-size: 11px;
       border-width: 0; }
       nav #store-container #store-search:focus {
         outline: none; }
+    nav #store-container .fa-shopping-cart, nav #store-container .fa-user {
+      position: absolute;
+      font-size: 1em;
+      padding: 5px;
+      color: #a9a18c; }
+      nav #store-container .fa-shopping-cart:hover, nav #store-container .fa-user:hover {
+        color: #d57500; }
+    nav #store-container .fa-user {
+      margin-left: 32px; }
   nav .nav-underline {
     height: 2px;
     background: #d57500;
