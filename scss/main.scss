@@ -15,7 +15,7 @@ nav {
   background: $Nav-color;
   padding: 5px;
   display: flex;
-  padding-left: 5rem;
+  padding-left: 4rem;
   justify-content: left;
   position: relative;
 
@@ -56,6 +56,7 @@ nav {
       font-size: 1em;
       padding: 5px;
       color: $Nav-text-color;
+      cursor: pointer;
       &:hover {
         color: $Nav-unline-color;
       }
@@ -82,4 +83,31 @@ nav {
 // Body \\
 body {
   background: grey;
+
+  .video-container {
+    height: 520px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    video {
+      min-width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: -100;
+    }
+
+    .video-text {
+      text-align: center;
+      margin: 250px;
+      color: white;
+      h2 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .test {
+    height: 1000px;
+    background: grey;
+  }
 }

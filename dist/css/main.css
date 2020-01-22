@@ -7,7 +7,7 @@ nav {
   background: #493829;
   padding: 5px;
   display: flex;
-  padding-left: 5rem;
+  padding-left: 4rem;
   justify-content: left;
   position: relative; }
   nav ul {
@@ -38,7 +38,8 @@ nav {
       position: absolute;
       font-size: 1em;
       padding: 5px;
-      color: #a9a18c; }
+      color: #a9a18c;
+      cursor: pointer; }
       nav #store-container .fa-shopping-cart:hover, nav #store-container .fa-user:hover {
         color: #d57500; }
     nav #store-container .fa-user {
@@ -55,3 +56,21 @@ nav {
 
 body {
   background: grey; }
+  body .video-container {
+    height: 520px;
+    padding-bottom: 50px;
+    padding-top: 50px; }
+    body .video-container video {
+      min-width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: -100; }
+    body .video-container .video-text {
+      text-align: center;
+      margin: 250px;
+      color: white; }
+      body .video-container .video-text h2 {
+        font-size: 3rem; }
+  body .test {
+    height: 1000px;
+    background: grey; }
