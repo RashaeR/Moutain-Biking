@@ -54,23 +54,66 @@ nav {
     transition: top 0.25s, opacity 0.25s;
     opacity: 0%; }
 
-body {
+body .video-container {
+  height: 520px;
+  padding-bottom: 50px;
+  padding-top: 50px; }
+  body .video-container video {
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -100; }
+  body .video-container .video-text {
+    text-align: center;
+    margin: 250px;
+    color: white; }
+    body .video-container .video-text h2 {
+      font-size: 3rem; }
+
+body .info-container {
+  height: 400px;
+  background: #493829;
+  overflow: hidden; }
+  body .info-container .info-element1 {
+    position: relative;
+    width: calc(100% / 3);
+    height: 100%;
+    display: block;
+    float: left;
+    opacity: 0;
+    background: #5d3d18;
+    right: calc(100% / 3);
+    transition: right 0.6s, opacity 1s; }
+  body .info-container .info-element2 {
+    position: relative;
+    width: calc(100% / 3);
+    height: 100%;
+    display: block;
+    float: left;
+    opacity: 0;
+    background: #4c692d;
+    top: 400px;
+    transition: top 0.6s, opacity 1s; }
+  body .info-container .info-element3 {
+    position: relative;
+    width: calc(100% / 3);
+    height: 100%;
+    display: block;
+    float: left;
+    opacity: 0;
+    background: #642913;
+    left: calc(100% / 3);
+    transition: left 0.6s, opacity 1s; }
+  body .info-container .fade-in-top {
+    opacity: 1;
+    top: 0; }
+  body .info-container .fade-in-right {
+    opacity: 1;
+    right: 0; }
+  body .info-container .fade-in-left {
+    opacity: 1;
+    left: 0; }
+
+body .test {
+  height: 1000px;
   background: grey; }
-  body .video-container {
-    height: 520px;
-    padding-bottom: 50px;
-    padding-top: 50px; }
-    body .video-container video {
-      min-width: 100%;
-      position: fixed;
-      top: 0;
-      z-index: -100; }
-    body .video-container .video-text {
-      text-align: center;
-      margin: 250px;
-      color: white; }
-      body .video-container .video-text h2 {
-        font-size: 3rem; }
-  body .test {
-    height: 1000px;
-    background: grey; }

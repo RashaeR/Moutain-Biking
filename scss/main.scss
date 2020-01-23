@@ -2,6 +2,9 @@
 $Nav-color: #493829;
 $Nav-text-color: #a9a18c;
 $Nav-unline-color: #d57500;
+$info1-background-color: #855723;
+$info2-background-color: #668d3c;
+$info3-background-color: #8f3b1b;
 
 // All \\
 * {
@@ -82,8 +85,6 @@ nav {
 
 // Body \\
 body {
-  background: grey;
-
   .video-container {
     height: 520px;
     padding-bottom: 50px;
@@ -103,6 +104,54 @@ body {
       h2 {
         font-size: 3rem;
       }
+    }
+  }
+
+  .info-container {
+    height: 400px;
+    background: $Nav-color;
+    overflow: hidden;
+    @mixin info-basic {
+      position: relative;
+      width: calc(100% / 3);
+      height: 100%;
+      display: block;
+      float: left;
+      opacity: 0;
+    }
+
+    .info-element1 {
+      @include info-basic;
+      background: darken($info1-background-color, 10%);
+      right: calc(100% / 3);
+      transition: right 0.6s, opacity 1s;
+    }
+    .info-element2 {
+      @include info-basic;
+      background: darken($info2-background-color, 10%);
+      top: 400px;
+      transition: top 0.6s, opacity 1s;
+    }
+    .info-element3 {
+      @include info-basic;
+      background: darken($info3-background-color, 10%);
+      left: calc(100% / 3);
+      transition: left 0.6s, opacity 1s;
+    }
+
+    .fade-in-top {
+      opacity: 1;
+      top: 0;
+    }
+
+    .fade-in-right {
+      opacity: 1;
+      right: 0;
+    }
+
+    .fade-in-left {
+      opacity: 1;
+      left: 0;
     }
   }
 

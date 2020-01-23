@@ -1,7 +1,32 @@
 //Variables
 const navLink = document.querySelectorAll(".nav-link");
 const navUnderLine = document.querySelectorAll(".nav-underline");
+const controller = new ScrollMagic.Controller();
 
+const scene = new ScrollMagic.Scene({
+  triggerElement: ".info-container"
+})
+  .setClassToggle(".info-element1", "fade-in-right")
+
+  .addTo(controller);
+
+const scene2 = new ScrollMagic.Scene({
+  triggerElement: ".info-container"
+})
+  .setClassToggle(".info-element2", "fade-in-top")
+  .addTo(controller);
+
+const scene3 = new ScrollMagic.Scene({
+  triggerElement: ".info-container"
+})
+  .setClassToggle(".info-element3", "fade-in-left")
+  .addTo(controller);
+
+const triggerHook = scene.triggerHook();
+
+scene.triggerHook(0.86);
+scene2.triggerHook(0.86);
+scene3.triggerHook(0.86);
 //Makes Nav unline's length
 for (var i = 0; i < 4; i++) {
   const nav = document.getElementById("nav-" + String(i));
