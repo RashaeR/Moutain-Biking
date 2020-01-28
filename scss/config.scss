@@ -1,0 +1,23 @@
+// Variables \\
+$Nav-color: #493829;
+$Nav-text-color: #a9a18c;
+$Nav-unline-color: #d57500;
+$info1-background-color: #855723;
+$info2-background-color: #668d3c;
+$info3-background-color: #8f3b1b;
+$Track-container-color: #b99c6b;
+
+// Mixin \\
+@mixin info-basic {
+  position: relative;
+  width: calc(100% / 3);
+  height: 100%;
+  display: block;
+  float: left;
+  opacity: 0;
+  text-align: center;
+}
+
+@mixin easeOut {
+  transition: all 0.2s ease-out;
+}
