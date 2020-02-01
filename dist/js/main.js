@@ -1,32 +1,57 @@
-//Variables
+// Variables \\
 const navLink = document.querySelectorAll(".nav-link");
 const navUnderLine = document.querySelectorAll(".nav-underline");
 const controller = new ScrollMagic.Controller();
 
-const scene = new ScrollMagic.Scene({
+// Adding Scrolling Events \\
+
+//info trigger events
+const info = new ScrollMagic.Scene({
   triggerElement: ".info-container"
 })
   .setClassToggle(".info-element1", "fade-in-right")
 
   .addTo(controller);
 
-const scene2 = new ScrollMagic.Scene({
+const info2 = new ScrollMagic.Scene({
   triggerElement: ".info-container"
 })
   .setClassToggle(".info-element2", "fade-in-top")
   .addTo(controller);
 
-const scene3 = new ScrollMagic.Scene({
+const info3 = new ScrollMagic.Scene({
   triggerElement: ".info-container"
 })
   .setClassToggle(".info-element3", "fade-in-left")
   .addTo(controller);
 
-const triggerHook = scene.triggerHook();
+info.triggerHook(0.86);
+info2.triggerHook(0.86);
+info3.triggerHook(0.86);
 
-scene.triggerHook(0.86);
-scene2.triggerHook(0.86);
-scene3.triggerHook(0.86);
+//tracks trigger event
+const track1 = new ScrollMagic.Scene({
+  triggerElement: ".track1"
+})
+  .setClassToggle(".track1", "fade-in-right")
+  .addTo(controller);
+
+const track2 = new ScrollMagic.Scene({
+  triggerElement: ".track2"
+})
+  .setClassToggle(".track2", "fade-in-left")
+  .addTo(controller);
+
+const track3 = new ScrollMagic.Scene({
+  triggerElement: ".track3"
+})
+  .setClassToggle(".track3", "fade-in-right")
+  .addTo(controller);
+
+track1.triggerHook(0.95);
+track2.triggerHook(0.95);
+track3.triggerHook(0.95);
+
 //Makes Nav unline's length
 for (var i = 0; i < 4; i++) {
   const nav = document.getElementById("nav-" + String(i));

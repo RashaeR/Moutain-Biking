@@ -155,21 +155,7 @@ body {
       transition: left 0.6s, opacity 1s;
       background-image: linear-gradient(transparent 80%, $Nav-color 110%);
     }
-
-    .fade-in-top {
-      opacity: 1;
-      top: 0;
-    }
-
-    .fade-in-right {
-      opacity: 1;
-      right: 0;
-    }
-
-    .fade-in-left {
-      opacity: 1;
-      left: 0;
-    }
+    @include fade;
   }
 
   .track-container {
@@ -177,7 +163,7 @@ body {
     background: $Track-container-color;
     text-align: center;
     color: $Text-color;
-
+    overflow: hidden;
     #title {
       top: 8rem;
       text-transform: uppercase;
@@ -191,6 +177,25 @@ body {
     .track-info-container {
       margin: auto;
       width: 60%;
+
+      .track1 {
+        right: 100px;
+        opacity: 0;
+        transition: right 1s, opacity 1s;
+      }
+
+      .track2 {
+        left: 100px;
+        opacity: 0;
+        transition: left 1s, opacity 1s;
+      }
+
+      .track3 {
+        right: 100px;
+        opacity: 0;
+        transition: right 1s, opacity 1s;
+      }
+      @include fade;
       .track-info {
         margin-top: 80px;
         display: grid;

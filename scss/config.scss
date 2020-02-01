@@ -22,3 +22,19 @@ $Text-color: white;
 @mixin easeOut {
   transition: all 0.2s ease-out;
 }
+@mixin fade {
+  .fade-in-top {
+    opacity: 1;
+    top: 0;
+  }
+
+  .fade-in-right {
+    opacity: 1;
+    right: 0;
+  }
+
+  .fade-in-left {
+    opacity: 1;
+    left: 0;
+  }
+}
