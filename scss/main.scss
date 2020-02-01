@@ -226,6 +226,45 @@ body {
     }
   }
 
+  .community-container {
+    height: 650px;
+    background: $community-background-color;
+    overflow: hidden;
+    .community-title {
+      position: relative;
+      left: 8%;
+      padding: 50px;
+      p {
+        color: $Text-color;
+        font-size: 2.5rem;
+        margin-right: 15rem;
+        display: inline;
+        cursor: pointer;
+
+        &:hover {
+          @include easeOut;
+          color: $Nav-unline-color;
+        }
+      }
+      button {
+        display: inline;
+        background-color: transparent;
+        font-size: 0.8rem;
+        color: $Text-color;
+        padding: 8px;
+        border-radius: 25px;
+        border-color: $Text-color;
+        border-style: solid;
+        cursor: pointer;
+
+        &:hover {
+          @include easeOut;
+          color: $Nav-unline-color;
+          border-color: $Nav-unline-color;
+        }
+      }
+    }
+  }
   .test {
     height: 1000px;
     background: grey;

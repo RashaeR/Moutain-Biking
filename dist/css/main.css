@@ -199,6 +199,38 @@ body .track-container {
           width: 300px;
           display: inline-block; }
 
+body .community-container {
+  height: 650px;
+  background: #404f24;
+  overflow: hidden; }
+  body .community-container .community-title {
+    position: relative;
+    left: 8%;
+    padding: 50px; }
+    body .community-container .community-title p {
+      color: white;
+      font-size: 2.5rem;
+      margin-right: 15rem;
+      display: inline;
+      cursor: pointer; }
+      body .community-container .community-title p:hover {
+        transition: all 0.2s ease-out;
+        color: #d57500; }
+    body .community-container .community-title button {
+      display: inline;
+      background-color: transparent;
+      font-size: 0.8rem;
+      color: white;
+      padding: 8px;
+      border-radius: 25px;
+      border-color: white;
+      border-style: solid;
+      cursor: pointer; }
+      body .community-container .community-title button:hover {
+        transition: all 0.2s ease-out;
+        color: #d57500;
+        border-color: #d57500; }
+
 body .test {
   height: 1000px;
   background: grey; }
