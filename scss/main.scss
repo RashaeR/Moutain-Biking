@@ -230,6 +230,7 @@ body {
     height: 650px;
     background: $community-background-color;
     overflow: hidden;
+
     .community-title {
       position: relative;
       left: 8%;
@@ -261,6 +262,39 @@ body {
           @include easeOut;
           color: $Nav-unline-color;
           border-color: $Nav-unline-color;
+        }
+      }
+    }
+
+    .community-pic {
+      display: flex;
+
+      .overlay {
+        position: absolute;
+        height: 100px;
+        width: 1349px;
+        background-image: linear-gradient(
+          $community-background-color,
+          transparent 80%
+        );
+      }
+
+      img {
+        height: 243px;
+      }
+      #pic1 {
+        height: 486px;
+        width: 250px;
+      }
+      #pic2 {
+        height: 486px;
+        width: 550px;
+      }
+
+      .double-pic {
+        img {
+          display: block;
+          width: 300px;
         }
       }
     }

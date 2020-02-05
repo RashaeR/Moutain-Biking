@@ -230,6 +230,24 @@ body .community-container {
         transition: all 0.2s ease-out;
         color: #d57500;
         border-color: #d57500; }
+  body .community-container .community-pic {
+    display: flex; }
+    body .community-container .community-pic .overlay {
+      position: absolute;
+      height: 100px;
+      width: 1349px;
+      background-image: linear-gradient(#404f24, transparent 80%); }
+    body .community-container .community-pic img {
+      height: 243px; }
+    body .community-container .community-pic #pic1 {
+      height: 486px;
+      width: 250px; }
+    body .community-container .community-pic #pic2 {
+      height: 486px;
+      width: 550px; }
+    body .community-container .community-pic .double-pic img {
+      display: block;
+      width: 300px; }
 
 body .test {
   height: 1000px;
