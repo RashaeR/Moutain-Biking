@@ -113,10 +113,7 @@ body {
       font-size: 2.6rem;
       text-shadow: 1px 2px 5px black;
 
-      &:hover {
-        @include easeOut;
-        color: $Nav-unline-color;
-      }
+      @include hoverEffect;
     }
 
     p {
@@ -242,10 +239,7 @@ body {
         display: inline;
         cursor: pointer;
 
-        &:hover {
-          @include easeOut;
-          color: $Nav-unline-color;
-        }
+        @include hoverEffect;
       }
       button {
         display: inline;
@@ -258,9 +252,8 @@ body {
         border-style: solid;
         cursor: pointer;
 
+        @include hoverEffect;
         &:hover {
-          @include easeOut;
-          color: $Nav-unline-color;
           border-color: $Nav-unline-color;
         }
       }
@@ -298,6 +291,90 @@ body {
         }
       }
     }
+  }
+
+  .comment-container {
+    height: 650px;
+    background: url(/dist/img/background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .overlay {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+
+      .comment {
+        position: relative;
+        top: 150px;
+        margin-left: 150px;
+        color: $Text-color;
+        img {
+          height: 125px;
+          width: 125px;
+          border-radius: 50%;
+        }
+
+        #headline {
+          padding-top: 20px;
+          padding-bottom: 2px;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-weight: 50;
+        }
+
+        #name {
+          font-size: 22px;
+          margin-bottom: 8px;
+
+          @include hoverEffect;
+        }
+
+        #comments {
+          width: 500px;
+          font-size: 16px;
+          padding-bottom: 10px;
+        }
+
+        .social-container {
+          font-size: 12px;
+          padding-bottom: 20px;
+          .fa-facebook-f {
+            margin-right: 25px;
+          }
+          .fab {
+            @include hoverEffect;
+          }
+        }
+
+        button {
+          background-color: $Nav-unline-color;
+          font-weight: bold;
+          font-size: 0.8rem;
+          color: black;
+          padding: 8px 15px;
+          border-radius: 25px;
+          border-color: $Nav-unline-color;
+          border-style: solid;
+          cursor: pointer;
+
+          &:hover {
+            @include easeOut;
+            background-color: transparent;
+            color: $Text-color;
+            border-color: $Text-color;
+          }
+        }
+      }
+    }
+  }
+
+  .news-container {
+    height: 450px;
+    background: $community-background-color;
   }
   .test {
     height: 1000px;

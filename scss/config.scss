@@ -39,3 +39,10 @@ $community-background-color: #404f24;
     left: 0;
   }
 }
+@mixin hoverEffect {
+  &:hover {
+    @include easeOut;
+    color: $Nav-unline-color;
+    cursor: pointer;
+  }
+}
