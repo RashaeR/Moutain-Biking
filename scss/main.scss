@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
 }
 
 // Nav \\
@@ -27,7 +28,6 @@ nav {
   }
 
   a {
-    text-decoration: none;
     color: $Nav-text-color;
     font-size: 12px;
     text-transform: uppercase;
@@ -375,13 +375,63 @@ body {
   .news-container {
     height: 450px;
     background: $community-background-color;
-
+    overflow: hidden;
     #news-title {
       color: $Text-color;
       font-size: 2.5rem;
       position: relative;
       padding-top: 2.8rem;
       padding-left: 2rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .news-content-container {
+      display: flex;
+      justify-content: center;
+      .news1 {
+        right: 75px;
+        opacity: 0;
+        transition: right 1s, opacity 1s;
+      }
+      .news2 {
+        bottom: 75px;
+        opacity: 0;
+        transition: bottom 1s, opacity 1s;
+      }
+
+      .news3 {
+        left: 75px;
+        opacity: 0;
+        transition: left 1s, opacity 1s;
+      }
+      @include fade;
+      h3 {
+        padding-bottom: 10px;
+        @include hoverEffect;
+      }
+      .news-element {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $Text-color;
+        img {
+          height: 175px;
+          width: 325px;
+        }
+        p {
+          color: darken($color: $Text-color, $amount: 30);
+          text-align: center;
+          font-size: 0.8rem;
+          width: 400px;
+          padding-bottom: 5px;
+        }
+        a {
+          color: $Text-color;
+          font-size: 0.8rem;
+          @include hoverEffect;
+        }
+      }
     }
   }
   .test {

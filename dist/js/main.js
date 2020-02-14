@@ -52,6 +52,29 @@ track1.triggerHook(0.95);
 track2.triggerHook(0.95);
 track3.triggerHook(0.95);
 
+//news trigger event
+const news1 = new ScrollMagic.Scene({
+  triggerElement: ".news1"
+})
+  .setClassToggle(".news1", "fade-in-right")
+  .addTo(controller);
+
+const news2 = new ScrollMagic.Scene({
+  triggerElement: ".news2"
+})
+  .setClassToggle(".news2", "fade-in-bottom")
+  .addTo(controller);
+
+const news3 = new ScrollMagic.Scene({
+  triggerElement: ".news3"
+})
+  .setClassToggle(".news3", "fade-in-left")
+  .addTo(controller);
+
+news1.triggerHook(0.8);
+news2.triggerHook(0.8);
+news3.triggerHook(0.8);
+
 //Makes Nav unline's length
 for (var i = 0; i < 4; i++) {
   const nav = document.getElementById("nav-" + String(i));
