@@ -473,6 +473,63 @@ body .blog-container {
     body .blog-container a:hover {
       color: white; }
 
+body .quote-container {
+  height: 400px;
+  background: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  body .quote-container .quote {
+    color: #8f3b1b; }
+    body .quote-container .quote #name {
+      padding-bottom: 20px; }
+    body .quote-container .quote #body {
+      font-size: 40px;
+      width: 550px; }
+
+body .explore-container {
+  height: 300px;
+  background: #404f24;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  body .explore-container .explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .explore-container .explore p {
+      color: white;
+      font-size: 2.5rem;
+      margin-right: 15rem;
+      display: inline;
+      cursor: pointer;
+      text-shadow: 0px 0.5px 2px black;
+      margin-right: 0;
+      padding-bottom: 20px; }
+      body .explore-container .explore p:hover {
+        transition: all 0.2s ease-out;
+        color: #d57500;
+        cursor: pointer; }
+    body .explore-container .explore button {
+      display: inline;
+      background-color: transparent;
+      font-size: 0.8rem;
+      color: white;
+      padding: 8px;
+      border-radius: 25px;
+      border-color: white;
+      border-style: solid;
+      cursor: pointer;
+      width: 220px; }
+      body .explore-container .explore button:hover {
+        transition: all 0.2s ease-out;
+        color: #d57500;
+        cursor: pointer; }
+      body .explore-container .explore button:hover {
+        border-color: #d57500; }
+
 body .test {
   height: 1000px;
   background: grey; }
