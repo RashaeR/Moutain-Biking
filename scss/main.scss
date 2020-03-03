@@ -238,7 +238,7 @@ body {
         margin-right: 15rem;
         display: inline;
         cursor: pointer;
-
+        text-shadow: 0px 0.5px 2px black;
         @include hoverEffect;
       }
       button {
@@ -301,72 +301,67 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    .overlay {
+    @include background-overlay;
+
+    .comment {
       position: relative;
-      height: 100%;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
+      top: 150px;
+      margin-left: 150px;
+      color: $Text-color;
+      img {
+        height: 125px;
+        width: 125px;
+        border-radius: 50%;
+      }
 
-      .comment {
-        position: relative;
-        top: 150px;
-        margin-left: 150px;
-        color: $Text-color;
-        img {
-          height: 125px;
-          width: 125px;
-          border-radius: 50%;
+      #headline {
+        padding-top: 20px;
+        padding-bottom: 2px;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 50;
+      }
+
+      #name {
+        font-size: 22px;
+        margin-bottom: 8px;
+
+        @include hoverEffect;
+      }
+
+      #comments {
+        width: 500px;
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
+
+      .social-container {
+        font-size: 12px;
+        padding-bottom: 20px;
+        .fa-facebook-f {
+          margin-right: 25px;
         }
-
-        #headline {
-          padding-top: 20px;
-          padding-bottom: 2px;
-          font-size: 20px;
-          text-transform: uppercase;
-          font-weight: 50;
-        }
-
-        #name {
-          font-size: 22px;
-          margin-bottom: 8px;
-
+        .fab {
           @include hoverEffect;
         }
+      }
 
-        #comments {
-          width: 500px;
-          font-size: 16px;
-          padding-bottom: 10px;
-        }
+      button {
+        background-color: $Nav-unline-color;
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: black;
+        padding: 8px 15px;
+        border-radius: 25px;
+        border-color: $Nav-unline-color;
+        border-style: solid;
+        cursor: pointer;
 
-        .social-container {
-          font-size: 12px;
-          padding-bottom: 20px;
-          .fa-facebook-f {
-            margin-right: 25px;
-          }
-          .fab {
-            @include hoverEffect;
-          }
-        }
-
-        button {
-          background-color: $Nav-unline-color;
-          font-weight: bold;
-          font-size: 0.8rem;
-          color: black;
-          padding: 8px 15px;
-          border-radius: 25px;
-          border-color: $Nav-unline-color;
-          border-style: solid;
-          cursor: pointer;
-
-          &:hover {
-            @include easeOut;
-            background-color: transparent;
-            color: $Text-color;
-            border-color: $Text-color;
-          }
+        &:hover {
+          @include easeOut;
+          background-color: transparent;
+          color: $Text-color;
+          border-color: $Text-color;
         }
       }
     }
@@ -383,6 +378,7 @@ body {
       padding-top: 2.8rem;
       padding-left: 2rem;
       padding-bottom: 1.5rem;
+      text-shadow: 0px 0.5px 2px black;
     }
 
     .news-content-container {
@@ -431,6 +427,92 @@ body {
           font-size: 0.8rem;
           @include hoverEffect;
         }
+      }
+    }
+  }
+
+  .blog-container {
+    height: 720px;
+    background: url(/dist/img/background2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include background-overlay;
+
+    #blog-title {
+      color: $Text-color;
+      font-size: 2.5rem;
+      position: relative;
+      padding-top: 2.8rem;
+      padding-left: 2rem;
+      text-shadow: 0px 0.5px 2px black;
+    }
+
+    #blog-sub-title {
+      font-size: 1.2rem;
+      padding-left: 2rem;
+      color: $Nav-unline-color;
+    }
+
+    img {
+      height: 270px;
+      width: 385px;
+      border-color: white;
+      border-width: 8px;
+      border-style: solid;
+      margin-bottom: 15px;
+      box-shadow: 2px 2px 5px black;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .blog-elements {
+      padding-top: 2.8rem;
+      padding-left: 1rem;
+      display: flex;
+      justify-content: space-around;
+
+      .blog1 {
+        right: 75px;
+        opacity: 0;
+        transition: right 1s, opacity 1s;
+      }
+
+      .blog2 {
+        left: 75px;
+        opacity: 0;
+        transition: left 1s, opacity 1s;
+      }
+
+      .blog3 {
+        right: 75px;
+        opacity: 0;
+        transition: right 1s, opacity 1s;
+      }
+      @include fade;
+      .blog-elements-container {
+        position: relative;
+        .blog-elements-title {
+          padding-bottom: 5px;
+          color: $Nav-unline-color;
+        }
+
+        .blog-elements-info {
+          width: 400px;
+          color: $Text-color;
+          font-size: 16px;
+          padding-bottom: 15px;
+        }
+      }
+    }
+    a {
+      color: lighten($color: $info3-background-color, $amount: 10);
+      font-size: 0.6rem;
+      @include hoverEffect;
+      &:hover {
+        color: $Text-color;
       }
     }
   }

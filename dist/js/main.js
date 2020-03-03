@@ -75,6 +75,29 @@ news1.triggerHook(0.8);
 news2.triggerHook(0.8);
 news3.triggerHook(0.8);
 
+//blog trigger event
+const blog1 = new ScrollMagic.Scene({
+  triggerElement: ".blog1"
+})
+  .setClassToggle(".blog1", "fade-in-right")
+  .addTo(controller);
+
+const blog2 = new ScrollMagic.Scene({
+  triggerElement: ".blog2"
+})
+  .setClassToggle(".blog2", "fade-in-left")
+  .addTo(controller);
+
+const blog3 = new ScrollMagic.Scene({
+  triggerElement: ".blog3"
+})
+  .setClassToggle(".blog3", "fade-in-right")
+  .addTo(controller);
+
+blog1.triggerHook(0.8);
+blog2.triggerHook(0.8);
+blog3.triggerHook(0.8);
+
 //Makes Nav unline's length
 for (var i = 0; i < 4; i++) {
   const nav = document.getElementById("nav-" + String(i));
