@@ -393,7 +393,7 @@ body .news-container {
 
 body .blog-container {
   height: 720px;
-  background: url(/dist/img/background2.jpg);
+  background: url(/dist/img/back.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -530,6 +530,139 @@ body .explore-container {
       body .explore-container .explore button:hover {
         border-color: #d57500; }
 
-body .test {
-  height: 1000px;
-  background: grey; }
+body .stats-container {
+  height: 200px;
+  display: flex;
+  color: white; }
+  body .stats-container .stat-1 {
+    background: #7a3217;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100% / 3); }
+    body .stats-container .stat-1 span {
+      font-weight: bold;
+      font-size: 25px; }
+    body .stats-container .stat-1 p {
+      font-size: 20px; }
+    body .stats-container .stat-1 i {
+      font-size: 40px;
+      padding-right: 15px;
+      margin-top: -25px; }
+  body .stats-container .stat-2 {
+    background: #8f3b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100% / 3); }
+    body .stats-container .stat-2 span {
+      font-weight: bold;
+      font-size: 25px; }
+    body .stats-container .stat-2 p {
+      font-size: 20px; }
+    body .stats-container .stat-2 i {
+      font-size: 40px;
+      padding-right: 15px;
+      margin-top: -25px; }
+    body .stats-container .stat-2 p {
+      margin-top: -20px; }
+  body .stats-container .stat-3 {
+    background: #a4441f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: calc(100% / 3); }
+    body .stats-container .stat-3 span {
+      font-weight: bold;
+      font-size: 25px; }
+    body .stats-container .stat-3 p {
+      font-size: 20px; }
+    body .stats-container .stat-3 i {
+      font-size: 40px;
+      padding-right: 15px;
+      margin-top: -25px; }
+    body .stats-container .stat-3 p {
+      margin-top: -20px; }
+
+body footer {
+  height: 75px;
+  background: #676767; }
+  body footer .footer-container {
+    padding-bottom: 18px;
+    display: flex; }
+    body footer .footer-container ul {
+      display: flex; }
+    body footer .footer-container li {
+      list-style: none;
+      padding: 8px;
+      text-align: center;
+      text-decoration: underline; }
+    body footer .footer-container a {
+      font-size: 14px;
+      color: white; }
+      body footer .footer-container a:hover {
+        transition: all 0.2s ease-out;
+        color: #d57500;
+        cursor: pointer; }
+      body footer .footer-container a:hover {
+        color: #b39f2b; }
+    body footer .footer-container .icon-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 15px;
+      margin-left: 700px; }
+      body footer .footer-container .icon-container .facebook {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: #3b5998;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 5px; }
+        body footer .footer-container .icon-container .facebook:hover {
+          cursor: pointer;
+          background: #2d4373; }
+        body footer .footer-container .icon-container .facebook i {
+          font-size: 11px;
+          color: white; }
+      body footer .footer-container .icon-container .twitter {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: #00acee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 5px; }
+        body footer .footer-container .icon-container .twitter:hover {
+          cursor: pointer;
+          background: #0087bb; }
+        body footer .footer-container .icon-container .twitter i {
+          font-size: 11px;
+          color: white; }
+      body footer .footer-container .icon-container .youtube {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background: #ff0000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 5px; }
+        body footer .footer-container .icon-container .youtube:hover {
+          cursor: pointer;
+          background: #cc0000; }
+        body footer .footer-container .icon-container .youtube i {
+          font-size: 11px;
+          color: white; }
+  body footer p {
+    font-size: 11px;
+    padding-left: 8px;
+    color: #b3b3b3; }

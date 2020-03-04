@@ -414,7 +414,7 @@ body {
 
   .blog-container {
     height: 720px;
-    background: url(/dist/img/background2.jpg);
+    background: url(/dist/img/back.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -540,8 +540,80 @@ body {
       }
     }
   }
-  .test {
-    height: 1000px;
-    background: grey;
+
+  .stats-container {
+    height: 200px;
+    display: flex;
+    color: $Text-color;
+    .stat-1 {
+      background: darken($color: $info3-background-color, $amount: 5);
+      @include stat-style;
+    }
+    .stat-2 {
+      background: $info3-background-color;
+      @include stat-style;
+      p {
+        margin-top: -20px;
+      }
+    }
+
+    .stat-3 {
+      background: lighten($color: $info3-background-color, $amount: 5);
+      @include stat-style;
+      p {
+        margin-top: -20px;
+      }
+    }
+  }
+
+  footer {
+    height: 75px;
+    background: darken($color: grey, $amount: 10);
+
+    .footer-container {
+      padding-bottom: 18px;
+      display: flex;
+      ul {
+        display: flex;
+      }
+
+      li {
+        list-style: none;
+        padding: 8px;
+        text-align: center;
+        text-decoration: underline;
+      }
+
+      a {
+        font-size: 14px;
+        color: $Text-color;
+        @include hoverEffect;
+        &:hover {
+          color: darken($color: #dbca69, $amount: 20);
+        }
+      }
+      .icon-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 15px;
+        margin-left: 700px;
+        .facebook {
+          @include icon-style($Facebook-color);
+        }
+
+        .twitter {
+          @include icon-style($Twitter-color);
+        }
+
+        .youtube {
+          @include icon-style($Youtube-color);
+        }
+      }
+    }
+    p {
+      font-size: 11px;
+      padding-left: 8px;
+      color: lighten($color: grey, $amount: 20);
+    }
   }
 }
