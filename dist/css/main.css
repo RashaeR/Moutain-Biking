@@ -262,7 +262,7 @@ body .community-container {
 
 body .comment-container {
   height: 650px;
-  background: url(/dist/img/background.jpg);
+  background: url("/dist/img/background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -393,7 +393,7 @@ body .news-container {
 
 body .blog-container {
   height: 720px;
-  background: url(/dist/img/back.jpg);
+  background: url(/dist/img/background2.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
