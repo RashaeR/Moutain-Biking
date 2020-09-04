@@ -9,7 +9,7 @@
   "author": "Rashae Redden",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "scrollmagic": "^2.0.7"
   }
 }
